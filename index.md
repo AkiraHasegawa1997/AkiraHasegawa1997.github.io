@@ -12,3 +12,6 @@
 [ex06](./ex06/ex06.txt)
 
 ## 演習の答え
+
+## 受講後アンケート
+[アンケート](https://docs.google.com/forms/d/e/1FAIpQLSdm34azy0P1bj38X5LP6832d6gdWpEeRnUrj0WfWKSRwB0GXQ/viewform?usp=sf_link)
