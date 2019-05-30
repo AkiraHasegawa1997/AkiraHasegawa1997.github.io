@@ -34,7 +34,7 @@
 1. HENSUU="Hello, World!"
    echo $HENSUU
 2. touch file{0..100}.md
-   ls *.md | xargs -I{} bash -c 'VAR={}; ${VAR/.md/.txt}'
+   ls *.md | xargs -I{} bash -c 'VAR={}; mv ${} ${VAR/.md/.txt}'
 
 # ex06
 1. XML=$(curl http://www.nhk.or.jp/r-news/podcast/nhkradionews.xml 2>/dev/null)
