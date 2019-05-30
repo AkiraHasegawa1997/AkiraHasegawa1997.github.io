@@ -1,0 +1,43 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+	実践演習　答え
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# ex01
+省略
+
+# ex02
+1. cp ex02.txt mytext.txt
+
+2. mkdir texts
+   mv mytext.txt texts
+
+3. cd ..
+   rm -rv texts
+
+# ex03
+1. ps aux | grep user_name
+
+2. 想定解 : cat ex03.txt | grep -v usage | grep -A3 使用例
+ 『または』の下の行が切れていることは見逃していました．ごめんなさい．
+
+   問題の意図の通りに出力するには次を実行します．
+   解答 ; cat ex03.txt| grep -v usage | grep -E '(使用例|\$|または)+'
+
+# ex04
+1. cd ..
+   ls | xargs -n1 -I{} cat {}/{}.txt
+
+2. mkdir new_dir
+   ls | xargs -n1 -I{} cp {}/{}.txt new_dir
+
+# ex05
+1. HENSUU="Hello, World!"
+   echo $HENSUU
+2. touch file{0..100}.md
+   ls *.md | xargs -I{} bash -c 'VAR={}; ${VAR/.md/.txt}'
+
+# ex06
+1. XML=$(curl http://www.nhk.or.jp/r-news/podcast/nhkradionews.xml 2>/dev/null)
+   echo $XML
+
+2. echo $XML | grep -Eo '(http|https)[^"]+mp3' | xargs -n1 wget
