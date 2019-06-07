@@ -33,8 +33,9 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 	実践演習発展
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1.  XML=$(curl http://www.nhk.or.jp/r-news/podcast/nhkradionews.xml 2>/dev/null) を実行し，
+1.  XML=$(curl http://www.xxxxxxx.xml 2>/dev/null) を実行し，
 　変数 XML の中身が何であるかを確かめましょう．
+  ※ 追記: 都合によりURLを伏せました．
 
 2. 変数 XML から mp3 を自動で保存してみましょう．
   HINT: 正規表現と grep を使ってURLを抜き出して wget コマンドで保存しましょう．
